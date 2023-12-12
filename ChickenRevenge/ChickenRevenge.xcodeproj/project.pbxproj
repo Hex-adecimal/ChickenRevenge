@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44C2BD182B27180300F5FC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD172B27180300F5FC8F /* AppDelegate.swift */; };
+		44C2BD1A2B27180300F5FC8F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44C2BD192B27180300F5FC8F /* GameScene.sks */; };
+		44C2BD1E2B27180300F5FC8F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD1D2B27180300F5FC8F /* GameScene.swift */; };
+		44C2BD202B27180300F5FC8F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD1F2B27180300F5FC8F /* GameViewController.swift */; };
+		44C2BD252B27180400F5FC8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C2BD242B27180400F5FC8F /* Assets.xcassets */; };
+		44C2BD312B271B3D00F5FC8F /* Chicken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD302B271B3D00F5FC8F /* Chicken.swift */; };
+		44C2BD352B271B9500F5FC8F /* GameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD342B271B9500F5FC8F /* GameSprite.swift */; };
+		44C2BD372B271ED800F5FC8F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD362B271ED800F5FC8F /* HomeScreen.swift */; };
+		44C2BD3B2B271EEC00F5FC8F /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD3A2B271EEC00F5FC8F /* GameOver.swift */; };
+		44C2BD3D2B271EF700F5FC8F /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44C2BD3C2B271EF700F5FC8F /* GameOver.sks */; };
+		44C2BD402B272E0000F5FC8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C2BD3E2B272E0000F5FC8F /* LaunchScreen.storyboard */; };
+		44C2BD452B272E2900F5FC8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C2BD432B272E2900F5FC8F /* Main.storyboard */; };
+		44C2BD482B27608200F5FC8F /* TutorialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD472B27608200F5FC8F /* TutorialScreen.swift */; };
+		44C2BD4A2B27609B00F5FC8F /* TutorialScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44C2BD492B27609B00F5FC8F /* TutorialScreen.sks */; };
+		44C2BD4C2B27671900F5FC8F /* HomeScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44C2BD4B2B27671900F5FC8F /* HomeScreen.sks */; };
+		44C2BD502B2847F800F5FC8F /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2BD4F2B2847F800F5FC8F /* SKTAudio.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44C2BD142B27180300F5FC8F /* ChickenRevenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickenRevenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C2BD172B27180300F5FC8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44C2BD192B27180300F5FC8F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		44C2BD1D2B27180300F5FC8F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		44C2BD1F2B27180300F5FC8F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		44C2BD242B27180400F5FC8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44C2BD302B271B3D00F5FC8F /* Chicken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chicken.swift; sourceTree = "<group>"; };
+		44C2BD342B271B9500F5FC8F /* GameSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSprite.swift; sourceTree = "<group>"; };
+		44C2BD362B271ED800F5FC8F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		44C2BD3A2B271EEC00F5FC8F /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		44C2BD3C2B271EF700F5FC8F /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
+		44C2BD3F2B272E0000F5FC8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44C2BD442B272E2900F5FC8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44C2BD462B2758C000F5FC8F /* ChickenRevenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChickenRevenge.entitlements; sourceTree = "<group>"; };
+		44C2BD472B27608200F5FC8F /* TutorialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialScreen.swift; sourceTree = "<group>"; };
+		44C2BD492B27609B00F5FC8F /* TutorialScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TutorialScreen.sks; sourceTree = "<group>"; };
+		44C2BD4B2B27671900F5FC8F /* HomeScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HomeScreen.sks; sourceTree = "<group>"; };
+		44C2BD4F2B2847F800F5FC8F /* SKTAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44C2BD112B27180300F5FC8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44C2BD0B2B27180300F5FC8F = {
+			isa = PBXGroup;
+			children = (
+				44C2BD162B27180300F5FC8F /* ChickenRevenge */,
+				44C2BD152B27180300F5FC8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44C2BD152B27180300F5FC8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44C2BD142B27180300F5FC8F /* ChickenRevenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44C2BD162B27180300F5FC8F /* ChickenRevenge */ = {
+			isa = PBXGroup;
+			children = (
+				44C2BD1F2B27180300F5FC8F /* GameViewController.swift */,
+				44C2BD172B27180300F5FC8F /* AppDelegate.swift */,
+				44C2BD2F2B2718C800F5FC8F /* Scenes */,
+				44C2BD2E2B2718BD00F5FC8F /* Support Code */,
+				44C2BD432B272E2900F5FC8F /* Main.storyboard */,
+				44C2BD3E2B272E0000F5FC8F /* LaunchScreen.storyboard */,
+				44C2BD462B2758C000F5FC8F /* ChickenRevenge.entitlements */,
+				44C2BD242B27180400F5FC8F /* Assets.xcassets */,
+			);
+			path = ChickenRevenge;
+			sourceTree = "<group>";
+		};
+		44C2BD2E2B2718BD00F5FC8F /* Support Code */ = {
+			isa = PBXGroup;
+			children = (
+				44C2BD302B271B3D00F5FC8F /* Chicken.swift */,
+				44C2BD342B271B9500F5FC8F /* GameSprite.swift */,
+				44C2BD4F2B2847F800F5FC8F /* SKTAudio.swift */,
+			);
+			path = "Support Code";
+			sourceTree = "<group>";
+		};
+		44C2BD2F2B2718C800F5FC8F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				44C2BD362B271ED800F5FC8F /* HomeScreen.swift */,
+				44C2BD4B2B27671900F5FC8F /* HomeScreen.sks */,
+				44C2BD1D2B27180300F5FC8F /* GameScene.swift */,
+				44C2BD192B27180300F5FC8F /* GameScene.sks */,
+				44C2BD3A2B271EEC00F5FC8F /* GameOver.swift */,
+				44C2BD3C2B271EF700F5FC8F /* GameOver.sks */,
+				44C2BD472B27608200F5FC8F /* TutorialScreen.swift */,
+				44C2BD492B27609B00F5FC8F /* TutorialScreen.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44C2BD132B27180300F5FC8F /* ChickenRevenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C2BD2B2B27180400F5FC8F /* Build configuration list for PBXNativeTarget "ChickenRevenge" */;
+			buildPhases = (
+				44C2BD102B27180300F5FC8F /* Sources */,
+				44C2BD112B27180300F5FC8F /* Frameworks */,
+				44C2BD122B27180300F5FC8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChickenRevenge;
+			productName = ChickenRevenge;
+			productReference = 44C2BD142B27180300F5FC8F /* ChickenRevenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44C2BD0C2B27180300F5FC8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					44C2BD132B27180300F5FC8F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 44C2BD0F2B27180300F5FC8F /* Build configuration list for PBXProject "ChickenRevenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44C2BD0B2B27180300F5FC8F;
+			productRefGroup = 44C2BD152B27180300F5FC8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44C2BD132B27180300F5FC8F /* ChickenRevenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44C2BD122B27180300F5FC8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C2BD452B272E2900F5FC8F /* Main.storyboard in Resources */,
+				44C2BD4C2B27671900F5FC8F /* HomeScreen.sks in Resources */,
+				44C2BD1A2B27180300F5FC8F /* GameScene.sks in Resources */,
+				44C2BD4A2B27609B00F5FC8F /* TutorialScreen.sks in Resources */,
+				44C2BD3D2B271EF700F5FC8F /* GameOver.sks in Resources */,
+				44C2BD252B27180400F5FC8F /* Assets.xcassets in Resources */,
+				44C2BD402B272E0000F5FC8F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44C2BD102B27180300F5FC8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C2BD1E2B27180300F5FC8F /* GameScene.swift in Sources */,
+				44C2BD502B2847F800F5FC8F /* SKTAudio.swift in Sources */,
+				44C2BD312B271B3D00F5FC8F /* Chicken.swift in Sources */,
+				44C2BD372B271ED800F5FC8F /* HomeScreen.swift in Sources */,
+				44C2BD482B27608200F5FC8F /* TutorialScreen.swift in Sources */,
+				44C2BD352B271B9500F5FC8F /* GameSprite.swift in Sources */,
+				44C2BD202B27180300F5FC8F /* GameViewController.swift in Sources */,
+				44C2BD182B27180300F5FC8F /* AppDelegate.swift in Sources */,
+				44C2BD3B2B271EEC00F5FC8F /* GameOver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44C2BD3E2B272E0000F5FC8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C2BD3F2B272E0000F5FC8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		44C2BD432B272E2900F5FC8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C2BD442B272E2900F5FC8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44C2BD292B27180400F5FC8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44C2BD2A2B27180400F5FC8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44C2BD2C2B27180400F5FC8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChickenRevenge/ChickenRevenge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BTQA234622;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chicken Revenge";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luigipenza.ChickenRevenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		44C2BD2D2B27180400F5FC8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChickenRevenge/ChickenRevenge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BTQA234622;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chicken Revenge";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luigipenza.ChickenRevenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44C2BD0F2B27180300F5FC8F /* Build configuration list for PBXProject "ChickenRevenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C2BD292B27180400F5FC8F /* Debug */,
+				44C2BD2A2B27180400F5FC8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C2BD2B2B27180400F5FC8F /* Build configuration list for PBXNativeTarget "ChickenRevenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C2BD2C2B27180400F5FC8F /* Debug */,
+				44C2BD2D2B27180400F5FC8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44C2BD0C2B27180300F5FC8F /* Project object */;
+}
