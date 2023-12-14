@@ -7,8 +7,6 @@
 
 import UIKit
 import SpriteKit
-import GameplayKit
-import GameKit
 
 protocol SceneManagerDelegate {
     func presentHomeScreen()
@@ -16,43 +14,9 @@ protocol SceneManagerDelegate {
     func presentGameOver()
 }
 
-class GameViewController: UIViewController, GKGameCenterControllerDelegate {
-    // GameCenter
-    var gcEnabled = Bool()
-    var gcDefaultLeaderboard = String()
-
-    func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController) {
-        gameCenterViewController.dismiss(animated: true, completion: nil)
-    }
-    
-    func authenticateLocalPlayer(){
-        let localPlayer :GKLocalPlayer = GKLocalPlayer.local
-        
-        localPlayer.authenticateHandler = { viewController, error in
-            if(viewController != nil) {
-                // 1. Show login if player is not logged in
-                viewController?.present(viewController!, animated: true, completion: nil)
-            } else if (localPlayer.isAuthenticated) {
-                // 2. Player is already authenticated & logged in, load game center
-                self.gcEnabled = true
-                
-                // Get the default leaderboard ID
-                localPlayer.loadDefaultLeaderboardIdentifier(completionHandler: { (leaderboardIdentifer, error) in
-                    if error != nil { print(error as Any)
-                    } else { self.gcDefaultLeaderboard = leaderboardIdentifer! }
-                })
-            } else {
-                // 3. Game center is not enabled on the users device
-                self.gcEnabled = false
-                print("Local player could not be authenticated!")
-                print(error as Any)
-            }
-        }
-    }
-    
+class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        //authenticateLocalPlayer()
         presentHomeScreen()
     }
     
