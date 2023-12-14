@@ -7,6 +7,7 @@
 
 import SpriteKit
 import GameplayKit
+import GameController
 
 struct CategoryBitMask {
     static let None: UInt32 = 0
@@ -25,11 +26,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             scoreLabel.text = "SCORE: \(gameScore)"
         }
     }
-    
     var worldNode = SKNode()
     //var chicken = Chicken()
     let chicken = SKSpriteNode(imageNamed: "chickenghost1")
-
+    
+    var virtualController: GCVirtualController?
+    var PlayerPosx : CGFloat = 0
     var scoreLabel: SKLabelNode!
     var controlling = false
     var nodePosition = CGPoint()
@@ -97,6 +99,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         print (chicken.position)
         addChild(chicken)
         
+        connectVirtuellController()
+
+        
         // Set score label
         scoreLabel = SKLabelNode(fontNamed: "SF Pro")
         scoreLabel.fontSize = 22.0
@@ -119,10 +124,32 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             //self.run(SKAction.repeatForever(SKAction.sequence([SKAction.run{self.spawnLilEnemy()}, SKAction.wait(forDuration: 3.0)])))
         }
     }
+
     
     //MARK: update
+    
+    
+    
     override func update(_ currentTime: TimeInterval) {
         //TODO: Insert game score here
         gameScore += 1
+        
+        PlayerPosx = CGFloat((virtualController?.controller?.extendedGamepad?.leftThumbstick.xAxis.value)!)
+        if PlayerPosx >= 0.5 {
+        chicken.position.x += 1
+        }
+        if PlayerPosx <= -0.5 {
+            chicken.position.x -= 1
+        }
+    }
+    func connectVirtuellController() {
+        let controllerConfic = GCVirtualController.Configuration()
+        controllerConfic.elements = [GCInputLeftThumbstick]
+        let controller = GCVirtualController(configuration: controllerConfic)
+        controller.connect()
+    
+        virtualController = controller
     }
 }
+
+
