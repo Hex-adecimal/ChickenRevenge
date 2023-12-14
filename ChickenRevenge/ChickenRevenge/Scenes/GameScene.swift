@@ -242,6 +242,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func gameOver(){
+        virtualController?.disconnect()
         SKTAudio.sharedInstance().backgroundMusicPlayer?.stop()
         worldNode.isPaused = true
         controlling = false
