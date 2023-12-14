@@ -8,14 +8,18 @@
 import SpriteKit
 
 class Chicken: SKSpriteNode, GameSprite {
-    var textureAtlas: SKTextureAtlas = SKTextureAtlas(named: "chickenghost")
+    var textureAtlas: SKTextureAtlas = SKTextureAtlas(named: "Chicken")
     var initialSize: CGSize = CGSize (width: 256, height: 256)
-    var damageable = true
     var idleAnimation = SKAction()
     
+    var damageable = true
+    var status = 0
+    
     func createAnimation(){
-        let idleFrames: [SKTexture] = [textureAtlas.textureNamed("chickenghost1"), textureAtlas.textureNamed("chickenghost2"), textureAtlas.textureNamed("chickenghost3"), textureAtlas.textureNamed("chickenghost4"), textureAtlas.textureNamed("chickenghost5"), textureAtlas.textureNamed("chickenghost6"), textureAtlas.textureNamed("chickenghost7"),
-            textureAtlas.textureNamed("chickenghost8")]
+        var idleFrames: [SKTexture] = []
+        for i in 1...8 {
+            idleFrames.append(textureAtlas.textureNamed("Chicken\(i)"))
+        }
         let idleAction = SKAction.animate(with: idleFrames, timePerFrame: 0.15)
         idleAnimation = SKAction.repeatForever(idleAction)
     }
@@ -30,5 +34,3 @@ class Chicken: SKSpriteNode, GameSprite {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-//kfennddkjnkkn  
