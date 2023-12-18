@@ -12,6 +12,8 @@ class HomeScreen: SKScene {
     var sceneManagerDelegate: SceneManagerDelegate?
     
     override func didMove(to view: SKView) {
+        SKTAudio.sharedInstance().backgroundMusicPlayer?.prepareToPlay()
+        SKTAudio.sharedInstance().playBackgroundMusic("Home.mp3")
         
         self.view?.showsPhysics = false
     }
@@ -24,18 +26,8 @@ class HomeScreen: SKScene {
         func touchedButton(touchLocation: CGPoint) {
             let nodeAtPoint = atPoint(touchLocation)
             if let touchedNode = nodeAtPoint as? SKSpriteNode {
-                if touchedNode.name?.starts(with: "TutorialButton") == true {
-                    let gameScene = TutorialScreen(fileNamed: "TutorialScreen")
-                    gameScene?.sceneManagerDelegate = self.sceneManagerDelegate
-                    print("moving to tutorial")
-                    self.view?.presentScene(gameScene!, transition: SKTransition.fade(withDuration: 0.4))
-                } else if touchedNode.name?.starts(with: "ScoreboardButton") == true {
-                    let viewController = GKGameCenterViewController(leaderboardID: "69420", playerScope: .global, timeScope: .allTime)
-                    viewController.gameCenterDelegate = sceneManagerDelegate as? GKGameCenterControllerDelegate
-                    if let controller = sceneManagerDelegate as? GameViewController {
-                        controller.present(viewController, animated: true, completion: nil)
-                    }
-                } else {
+                SKTAudio.sharedInstance().backgroundMusicPlayer?.stop()
+                if touchedNode.name?.starts(with: "Background") == true {
                     let gameScene = GameScene(fileNamed: "GameScene")
                     gameScene?.sceneManagerDelegate = self.sceneManagerDelegate
                     print("moving to gameplay")

@@ -18,6 +18,11 @@ public class SKTAudio {
         return SKTAudioInstance
     }
     
+    public func playBackgroundMusic() {
+        // Ensure the backgroundMusicPlayer is not nil and play it
+        backgroundMusicPlayer?.play()
+    }
+    
     public func playBackgroundMusic(_ filename: String) {
         if self.musicOn == true {
             self.backgroundMusicPlayer?.volume = 1.0
@@ -87,6 +92,21 @@ public class SKTAudio {
             player.play()
         } else {
             print("Could not create audio player: \(error!)")
+        }
+    }
+    
+    public func preloadBackgroundMusic(_ fileName: String) {
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: nil) else {
+            print("Background music file not found: \(fileName)")
+            return
+        }
+
+        do {
+            // Initialize the audio player without playing
+            backgroundMusicPlayer = try AVAudioPlayer(contentsOf: url)
+            backgroundMusicPlayer?.prepareToPlay()
+        } catch {
+            print("Error loading background music: \(error.localizedDescription)")
         }
     }
     

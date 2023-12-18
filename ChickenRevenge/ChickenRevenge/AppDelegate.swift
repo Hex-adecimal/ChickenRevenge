@@ -7,11 +7,18 @@
 
 import UIKit
 
-//TODO: LocaluserAuthentication
-//TODO: Assets (App icon, Chicken, Chef, Tutorial, Gameover, ...)
-//TODO: Audio x9
+//TODO: - Gameplay
+// Random projectile pattern
+// Shooting the chef
+    // add button to do so, or doing it autmatically
 
-// How to add haptic feedback
+//TODO: - UI
+// Score and hp (need %)
+// Screens
+// Animations
+// Chickens looking left or right
+// Controller look
+    // pretty hard
 
 var userScore = 0
 

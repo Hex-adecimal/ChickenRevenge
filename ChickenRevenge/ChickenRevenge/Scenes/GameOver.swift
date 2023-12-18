@@ -25,19 +25,19 @@ class GameOver: SKScene {
         // Set score 
         score.zPosition = 3
         score.horizontalAlignmentMode = .center
-        score.fontColor = .systemOrange
-        score.text = "FINAL SCORE: \(userScore)"
+        score.fontColor = .gray
+        score.text = "\(userScore)"
         score.fontSize = 22.0
-        score.position = CGPoint(x: 0, y: self.frame.height/5 - 80)
+        score.position = CGPoint(x: -40, y: self.frame.height/5 - 140)
         addChild(score)
     
         // Set highscore
         highScore.zPosition = 3
         highScore.horizontalAlignmentMode = .center
-        highScore.fontColor = .systemOrange
-        highScore.text = "HIGH SCORE: \(UserDefaults.standard.integer(forKey: "scoreKey"))"
+        highScore.fontColor = .gray
+        highScore.text = "\(UserDefaults.standard.integer(forKey: "scoreKey"))"
         highScore.fontSize = 22.0
-        highScore.position = CGPoint(x: 0, y: self.frame.height/5 - 110)
+        highScore.position = CGPoint(x: 40, y: self.frame.height/5 - 140)
         addChild(highScore)
         
         if let gameo = self.childNode(withName: "RetryButton") as? SKSpriteNode {
@@ -47,5 +47,28 @@ class GameOver: SKScene {
             mainMenuButton = gameo
         }
         self.view?.showsPhysics = false
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        let touchLocation = touch.location(in: self)
+        touchedButton(touchLocation: touchLocation)
+        
+        func touchedButton(touchLocation: CGPoint) {
+            let nodeAtPoint = atPoint(touchLocation)
+            if let touchedNode = nodeAtPoint as? SKSpriteNode {
+                if touchedNode.name?.starts(with: "RetryButton") == true {
+                    let gameScene = GameScene(fileNamed: "GameScene")
+                    gameScene?.sceneManagerDelegate = self.sceneManagerDelegate
+                    print("moving to gameplay")
+                    self.view?.presentScene(gameScene!, transition: SKTransition.fade(withDuration: 0))
+                }
+                if touchedNode.name?.starts(with: "MainMenuButton") == true {
+                    let gameScene = HomeScreen(fileNamed: "HomeScreen")
+                    gameScene?.sceneManagerDelegate = self.sceneManagerDelegate
+                    self.view?.presentScene(gameScene!, transition: SKTransition.fade(withDuration: 0))
+                }
+            }
+        }
     }
 }

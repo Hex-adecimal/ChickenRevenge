@@ -9,7 +9,7 @@ import SpriteKit
 
 class Chicken: SKSpriteNode, GameSprite {
     var textureAtlas: SKTextureAtlas = SKTextureAtlas(named: "Chicken")
-    var initialSize: CGSize = CGSize (width: 256, height: 256)
+    var initialSize: CGSize = CGSize(width: 256, height: 256)
     var idleAnimation = SKAction()
     
     var damageable = true
